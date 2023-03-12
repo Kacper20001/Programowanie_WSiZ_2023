@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Osobista strona</title>
+</head>
+<body>
+    <header>
+        <h1><b>Witam na mojej stronie!</b></h1>
+            <nav>
+                <h3>Nazywam się Kacper Kulig. 
+                <p>Jestem studentem pierwszego roku na kierunku Informatyka - 
+                programowanie w Wyższej Szkole Informatyki i Zarządzania. Interesuję się również sportem, w szczególności piłką nożną.</p></h3>
+            </nav>
+    </header>
+    <main>
+        <section>
+            <h3>Wykształcenie</h3>
+                <table border="1">
+                    <tr>
+                        <th>Okres czasu</th>
+                        <th>Nazwa placówki edukacyjnej</th>
+                    </tr>
+                    <tr>
+                        <td>2022-obecnie</td>
+                        <td>Wyższa Szkoła Informatyki i Zarządzania w Rzeszowie</td>
+                    </tr>
+                    <tr>
+                        <td>2017-2021</td>
+                        <td>Zespół Szkół Elektronicznych w Rzeszowie</td>
+                    </tr>
+                    <tr>
+                        <td>2007-2017</td>
+                        <td>Szkoła Podstawowa im. Jana Pawła II w Jasionce</td>
+                    </tr>
+                </table>
+        </section>
+        <article>
+            <h3><a href="Seriale/index.html">Seriale</a></h3>
+            <h6>(Kliknij w nazwę serialu, aby dowiedzieć się więcej)</h6>
+                <ul>
+                    <li><a href="https://www.filmweb.pl/serial/Gra+o+tron-2011-476848">Gra o tron</a></li>
+                    <li><a href="https://www.filmweb.pl/serial/Breaking+Bad-2008-430668">Breaking Bad</a></li>
+                    <li><a href="https://www.filmweb.pl/serial/The+Originals-2013-608361">The Originals</a></li>
+                    <li><a href="https://www.filmweb.pl/serial/Wikingowie-2013-659055">Wikingowie</a></li>
+                    <li><a href="https://www.filmweb.pl/serial/The+Last+of+Us-2023-849662">The Last of Us</a></li>
+                    <li><a href="https://www.filmweb.pl/serial/Skazany+na+%C5%9Bmier%C4%87-2005-236096">Skazany na śmierć</a></li>
+                    <li><a href="https://www.filmweb.pl/serial/Peaky+Blinders-2013-680981">Peaky Blinders</a></li>
+                </ul>
+        </article>
+        <article>
+            <h3><a href="Książki/index.html">Książki</a></h3>
+                <ol>
+                    <li>Pułapki myślenia – <i>Daniel Kahneman</i></li>
+                    <li> Dary niedoskonałości – <i>Brené Brown</i></li>
+                    <li>Sztuka zwycięstwa –<i> Phil Knight</i></li>
+                    <li>Trudne rozmowy – <i>Douglas Stone, Bruce Patton, Sheila Heen i Roger Fisher</i></li>    
+                    <li>Zjedz tę żabę – <i>Brian Tracy</i></li>
+                    <li>Jak zdobyć przyjaciół i zjednać sobie ludzi – <i>Dale Carnegie</i></li>
+                    <li>Jak czerpać radość z pracy – <i>Marie Kondo, Scott Sonenshein</i></li>
+                </ol>
+        </article>
+        <aside>
+            <table border="1" width="100" height="100">
+                <tr>
+                    <td></td>
+                    <td rowspan="2"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td rowspan="2" colspan="2"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td colspan="2"></td>
+                    <td></td>
+                </tr>
+
+            </table>
+        
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg/161px-Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg">
+        </aside>
+    </main>
+    <footer>
+        <h4>To jest stopka mojej strony.</h4>
+    </footer>
+    <form action="/action_page.php" method="get">
+        <label for="fname">Name:</label>
+        <input type="text" id="fname" name="fname"><br><br>
+        <label for="email">Email:</label>
+        <input type="text" id="email" email="email"><br><br>
+        <p> Do you want get news daily?<INPUT TYPE="checkbox" NAME="daily" VALUE="daily"></p>
+        <p>Do you want 10% discount? <INPUT TYPE="radio" NAME="orbits" VALUE="discount"></p>
+        <label for="first_day">Select first news day:</label>
+        <input type="date" id="first_day" name="first_day">
+        <p><input type="submit" value="Subscribe"></p>
+
+      </form>
+
+</body>
+</html>
