@@ -4,7 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap" rel="stylesheet">
     <title>Osobista strona</title>
+    <style>
+        body{
+            padding: 0px;
+            margin: 0px;
+            font-family:'Inter', sans-serif;
+        }
+        header{
+            position: sticky;
+            width: 100%;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            background-color: lightgray;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 0 10px 2px #aaa;
+            padding: 20px 120px;
+            z-index: 100;
+        }
+        * {
+            box-sizing: border-box;
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
     <header>
@@ -12,13 +40,13 @@
             <nav>
                 <h3>Nazywam się Kacper Kulig. 
                 <p>Jestem studentem pierwszego roku na kierunku Informatyka - 
-                programowanie w Wyższej Szkole Informatyki i Zarządzania. Interesuję się również sportem, w szczególności piłką nożną.</p></h3>
+                programowanie w Wyższej Szkole Informatyki i Zarządzania.</p></h3>
             </nav>
     </header>
     <main>
         <section>
             <h3>Wykształcenie</h3>
-                <table border="1">
+                <table border ="1">
                     <tr>
                         <th>Okres czasu</th>
                         <th>Nazwa placówki edukacyjnej</th>
@@ -36,6 +64,7 @@
                         <td>Szkoła Podstawowa im. Jana Pawła II w Jasionce</td>
                     </tr>
                 </table>
+            <img src="/Programowanie_WSiZ_2023/JPG/main.jpg" alt="Piękny biały łabędź" id="łabędź" height="750" width="1000">
         </section>
         <article>
             <h3><a href="Seriale/index.html">Seriale</a></h3>
@@ -93,15 +122,20 @@
     <footer>
         <h4>To jest stopka mojej strony.</h4>
     </footer>
-    <form action="/action_page.php" method="get">
+    <form action="/action_page.php" method="post">
         <label for="fname">Name:</label>
-        <input type="text" id="fname" name="fname"><br><br>
-        <label for="email">Email:</label>
-        <input type="text" id="email" email="email"><br><br>
-        <p> Do you want get news daily?<INPUT TYPE="checkbox" NAME="daily" VALUE="daily"></p>
-        <p>Do you want 10% discount? <INPUT TYPE="radio" NAME="orbits" VALUE="discount"></p>
-        <label for="first_day">Select first news day:</label>
-        <input type="date" id="first_day" name="first_day">
+        <input type="text" id="fname" name="fname" placeholder="Nazwa użytkownika"><br>
+        <label for="email" >Email:</label>
+        <input type="email" id="email" email="email" placeholder="sameone@example.com"><br>
+        <p>
+            <label for="daily">Do you want get news daily?</label> 
+            <INPUT TYPE="checkbox" NAME="daily" VALUE="daily">
+        </p>
+        <p>
+            <label for="discount"> Do you want 10% discount? </label> 
+            <INPUT TYPE="radio" NAME="orbits" VALUE="discount"></p>
+            <label for="first_day">Select first news day:</label>
+            <input type="datetime-local" id="first_day" name="first_day">
         <p><input type="submit" value="Subscribe"></p>
 
       </form>
