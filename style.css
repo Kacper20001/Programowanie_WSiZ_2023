@@ -1,0 +1,44 @@
+
+body{
+    padding: 0px;
+    margin: 0px;
+    font-family:'Inter', sans-serif;
+}
+header{
+    position: sticky;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: lightgray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 10px 2px #aaa;
+    padding: 20px 120px;
+    z-index: 100;
+}
+* {
+    box-sizing: border-box;
+}
+article{
+    display: block;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 120px;
+    padding-right: 120px;
+    font-size: 20px;
+}
+section{
+        display: block;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        padding-left: 120px;
+        padding-right: 120px;
+        font-size: 20px;
+}
+#łabędź{
+    display: block;
+    padding: 50px;
+    height: 100%;
+}
