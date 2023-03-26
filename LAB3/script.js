@@ -35,17 +35,18 @@ let P = Math.sqrt(p*(p-a1)*(p-b1)*(p-c1));
 document.getElementById("Pole").innerHTML="Pole trójkąta wynosi = " + P;
 
 
+var przycisk = document.querySelector("#losuj"); 
+przycisk.addEventListener("click", function(){
+  var los = Math.floor(Math.random()*5)+1;
+  var wylosowana = prompt("Spróbuj odgadnąć liczbę całkowitą z zakresu od 1 do 5 ");
+  wylosowana = parseInt(wylosowana);
 
-var los = Math.floor(Math.random()*5)+1;
-var wylosowana = prompt("Spróbuj odgadnąć liczbę całkowitą z zakresu od 1 do 5 ");
-wylosowana = parseInt(wylosowana);
-
-if (wylosowana === los) {
+  if (wylosowana === los) {
     alert("Dobra robota");
-} else {
+  } else {
     alert("Nie pasuje");
-}
-
+  }
+})
 
 var liczba1 = parseInt(prompt("Podaj pierwszą liczbę:"));
 var liczba2 = parseInt(prompt("Podaj drugą liczbę:"));
