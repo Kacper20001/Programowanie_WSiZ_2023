@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="form-container">
+    <form id="formularz">
+        <div class="form-group">
+            <label for="imie">Imię:</label>
+            <input type="text" id="imie" name="imie" placeholder="Wprowadź imię" >
+            <div class="error-message"></div>
+        </div>            
+        <div class="form-group">
+            <label for="nazwisko">Nazwisko:</label>
+            <input type="text" id="nazwisko" name="nazwisko" placeholder="Wprowadź nazwisko" >
+            <div class="error-message"></div>
+
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <!-- <input type="email" id="email" name="email" placeholder="Wprowadź email" required> -->
+            <input type="text" id="email" name="email" placeholder="Wprowadź email" >
+            <div class="error-message"></div>
+
+        </div>
+        <div class="form-group">
+            <label for="haslo">Hasło:</label>
+            <!-- <input type="password" id="haslo" name="haslo" placeholder="Wprowadź hasło" minlength="8" > -->
+            <input type="password" id="haslo" name="haslo" placeholder="Wprowadź hasło">
+            <div class="error-message"></div>
+        </div>
+        <div class="form-group">
+            <label for="haslo_sprawdzenie">Powtórz hasło:</label>
+            <input type="password" id="haslo_sprawdzenie" name="haslo_sprawdzenie" placeholder="Powtórz hasło" >
+            <div class="error-message"></div>
+
+        </div>
+        <div class="form-group">
+            <label for="plec">Płeć:</label>
+            <select id="plec" name="plec" >
+                <option value="">Wybierz płeć</option>
+                <option value="mezczyzna">Mężczyzna</option>
+                <option value="kobieta">Kobieta</option>
+            </select>
+            <div class="error-message"></div>
+        </div>
+        <div class="form-group">
+            <label for="telefon">Telefon:</label>
+            <input type="text" id="telefon" name="telefon" placeholder="Wprowadź numer telefonu" >
+            <div class="error-message"></div>
+        </div>
+        <div class="form-group">
+            <label for="data">Data urodzenia:</label>
+            <input type="date" id="data" name="data" placeholder="Wprowadź datę urodzenia" >
+            <div class="error-message"></div>
+        </div>
+        <div class="form-group">
+            <label for="kraj">Kraj:</label>
+            <input type="text" id="kraj" name="kraj" placeholder="Wprowadź nazwę kraju" >
+            <div class="error-message"></div>
+        </div>
+        <div class="form-group">
+            <label for="wojewodztwo">Województwo:</label>
+            <select id="wojewodztwo" name="wojewodztwo" placeholder="Wprowadź nazwę województwa" disabled >
+                <option value="">Wybierz województwo</option>
+                <option value="dolnoslaskie">dolnośląskie</option>
+                <option value="kujawsko-pomorskie">kujawsko-pomorskie</option>
+                <option value="lubelskie">lubelskie</option>
+                <option value="lubuskie">lubuskie</option>
+                <option value="lodzkie">łódzkie</option>
+                <option value="malopolskie">małopolskie</option>
+                <option value="mazowieckie">mazowieckie</option>
+                <option value="opolskie">opolskie</option>
+                <option value="podkarpackie">podkarpackie</option>
+                <option value="podlaskie">podlaskie</option>
+                <option value="pomorskie">pomorskie</option>
+                <option value="slaskie">śląskie</option>
+                <option value="swietokrzyskie">świętokrzyskie</option>
+                <option value="warminsko-mazurskie">warmińsko-mazurskie</option>
+                <option value="wielkopolskie">wielkopolskie</option>
+                <option value="zachodniopomorskie">zachodniopomorskie</option>
+            </select>
+            <div class="error-message"></div>
+        </div>
+        <div class="form-group">
+            <label for="adres">Adres:</label>
+            <input type="text" id="adres" name="adres" placeholder="Wprowadź adres zamieszkania" disabled >
+            <div class="error-message"></div>
+        </div>
+        <div class="form-group">
+            <label for="adresTakiSam">Adres zamieszkania:</label>
+            <input type="checkbox" id="adresTakiSam" name="adresTakiSam" checked> Adres korespondencyjny jest taki sam jak adres zamieszkania
+            <div class="error-message"></div>
+        </div>
+        <div class="form-group">
+            <label for="adresKorespondencyjny">Adres korespondencyjny:</label>
+            <input type="text" id="adresKorespondencyjny" name="adresKorespondencyjny" placeholder="Wprowadź adres korespondencyjny" disabled >
+            <div class="error-message"></div>
+        </div>
+        <div class="form-group">
+            <button type="submit">Zapisz</button>
+        </div>
+    </form>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

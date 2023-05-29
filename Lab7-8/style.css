@@ -1,0 +1,28 @@
+.form-container {
+    margin:20px;
+    width: 400px;
+}
+
+#formularz {
+    width: auto;
+    height: auto;
+    padding: 20px;
+    background: lightslategray;
+    border-radius: 6px;
+}
+
+.form-container .form-group {
+    width: auto;
+    margin: 2px 2px 2px 2px;
+    padding: 2px;
+    height: auto;
+    text-align: center;
+    background-color: lightgray;
+    border-radius: 6px;
+    border: 1px solid silver;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
